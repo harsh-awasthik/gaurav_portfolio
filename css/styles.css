@@ -57,6 +57,7 @@
   width: 100%;
   max-width: 75vw;
   color: white;
+  text-align: center;
 }
 
 .card-s {
@@ -67,15 +68,16 @@
   padding: 15px;
   box-sizing: border-box;
   cursor: pointer;
-  background-position: center;
+  background-position: top;
   background-size: cover;
   background-color: #f0f0f0;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: flex-end; /* Align items to the bottom */
+  align-items: flex-end; /* Align items to the bottom */
   color: white;
+  transition: all .5s ease-in-out;
 }
+
 
 @media (max-width: 1200px) {
   .card-s {
@@ -89,23 +91,93 @@
   }
 }
 
+.card-concept {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7) 25%, rgba(0, 0, 0, 0) 75%), url("../images/s/concept/concept1.jpg");
+}
+
+.card-sangam {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.8) 25%, rgba(0, 0, 0, 0) 75%), url("../images/s/sangam/sangam1.jpg");
+}
+
+.card-shivaji {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7) 25%, rgba(0, 0, 0, 0) 75%), url("../images/s/shivaji/shivaji14.jpg");
+}
+
+.card-sakhi {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7) 25%, rgba(0, 0, 0, 0) 75%), url("../images/s/sakhi/sakhi1.jpg");
+}
+
+.card-fashion {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7) 25%, rgba(0, 0, 0, 0) 75%), url("../images/s/fashion/fashion1.jpg");
+}
+
+.card-sangam {
+  background-image: linear-gradient(to top, rgba(0, 0, 0, 0.7) 25%, rgba(0, 0, 0, 0) 75%), url("../images/s/sangam/sangam1.jpg");
+}
+
+.card-s:hover{
+  transform: translateY(-10px);
+  background-position: center;
+}
 
 
-.card-concept{
-  background-image: url("../images/s/concept/concept1.jpg");
+.text-subs {
+  margin-top: 10vh;
+  width: 100%;
+  max-width: 75vw;
+  color: white;
 }
-.card-sangam{
-  background-image: url("../images/s/sangam/sangam1.jpg");
+
+.gallery {
+  max-width: 1200px;
+  margin: 0 auto;
+  column-count: 4;
+  font-family: arial;
 }
-.card-shivaji{
-  background-image: url("../images/s/shivaji/shivaji14.jpg");
+.gallery-item {
+  break-inside: avoid;
+  margin-bottom: 16px;
 }
-.card-sakhi{
-  background-image: url("../images/s/sakhi/sakhi1.jpg");
+.gallery-item figure {
+  margin: 0;
+  position: relative;
 }
-.card-fashion{
-  background-image: url("../images/s/fashion/fashion1.jpg");
+.gallery-item figcaption {
+  font-style: italic;
+  padding: 8px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  box-sizing: border-box;
+  bottom: 3px;
+  color: #fff;
+  height: 30px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  border-radius: 0 0 14px 14px;
 }
-.card-sangam{
-  background-image: url("../images/s/sangam/sangam1.jpg");
+.gallery-item img {
+  width: 100%;
+  border-radius: 14px;
+}
+.gallery-item p {
+  margin: 0;
+  padding: 8px;
+}
+
+@media screen and (max-width: 500px) {
+  .gallery {
+    column-count: 1;
+  }
+}
+@media screen and (min-width: 501px) and (max-width: 700px) {
+  .gallery {
+    column-count: 2;
+  }
+}
+@media screen and (min-width: 701px) and (max-width: 900px) {
+  .gallery {
+    column-count: 3;
+  }
 }
