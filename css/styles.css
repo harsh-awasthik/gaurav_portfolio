@@ -1,3 +1,4 @@
+
 .container-pg{ 
   width: 100%;
   min-height: 100vh;
@@ -180,4 +181,11 @@
   .gallery {
     column-count: 3;
   }
+}
+
+
+
+
+.lazy{
+  width:auto;
 }
