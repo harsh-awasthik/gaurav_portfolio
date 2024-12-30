@@ -7,7 +7,7 @@
 }
 
 .home {
-  background-image: url("../images/h/2.jpg");
+  background-image: url("../images/h/h1.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -92,17 +92,20 @@
 
 
 .card-concept{
-  background-image: url("../images/s/concept.jpg");
+  background-image: url("../images/s/concept/concept1.jpg");
 }
 .card-sangam{
-  background-image: url("../images/s/sangam.jpg");
+  background-image: url("../images/s/sangam/sangam1.jpg");
 }
 .card-shivaji{
-  background-image: url("../images/s/shiavji.jpg");
+  background-image: url("../images/s/shivaji/shivaji14.jpg");
 }
-.card-sakshi{
-  background-image: url("../images/s/sakshi.jpg");
+.card-sakhi{
+  background-image: url("../images/s/sakhi/sakhi1.jpg");
 }
 .card-fashion{
-  background-image: url("../images/s/fashion.jpg");
+  background-image: url("../images/s/fashion/fashion1.jpg");
+}
+.card-sangam{
+  background-image: url("../images/s/sangam/sangam1.jpg");
 }
