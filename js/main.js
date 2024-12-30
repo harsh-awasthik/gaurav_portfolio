@@ -85,3 +85,33 @@ $(function() {
 	siteMenuClone();
 
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+	// Create an intersection observer
+	const lazyImages = document.querySelectorAll('.lazy');
+  
+	const options = {
+	  root: null, // Use the viewport as the root
+	  rootMargin: '0px',
+	  threshold: 0.1 // 10% of the image must be visible to load it
+	};
+  
+	const loadImage = (image) => {
+	  const src = image.getAttribute('data-src');
+	  image.setAttribute('src', src);
+	  image.classList.remove('lazy');
+	};
+  
+	const observer = new IntersectionObserver((entries, observer) => {
+	  entries.forEach(entry => {
+		if (entry.isIntersecting) {
+		  loadImage(entry.target);
+		  observer.unobserve(entry.target);
+		}
+	  });
+	}, options);
+  
+	lazyImages.forEach(image => {
+	  observer.observe(image);
+	});
+  });
