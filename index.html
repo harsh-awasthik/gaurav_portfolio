@@ -2,79 +2,37 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/styles.css">
-    
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
-
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
-
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    
-    <!-- Style -->
-    
-    <link rel="stylesheet" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
     <title>Gaurav Portfolio</title>
   </head>
-  <body style="overflow: hidden;">
-
-
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <div class="cross" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></div>
+        <div class ='content'>
+          <a href="#">Products</a>
+          <a href="#">Blog</a>
+          <a href="#">About</a>
+          <a href="#">Forum</a>
+          <a href="#">Login</a>
         </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
-   
-    
-    <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
-
-      <div class="container">
-        <div class="row align-items-center">
-          
-          <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo" style="white-space: nowrap;"><a href="index.html">Gaurav Awasthi<span class="text-primary">.</span> </a></h1>
-          </div>
-
-          <div class="col-12 col-md-10 d-none d-xl-block">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-
-              <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li class="has-children">
-                  <a href="stories.html" class="nav-link">Stories</a>
-                  <ul class="dropdown">
-                    <li><a href="concept.html" class="nav-link">Concept</a></li>
-                    <li><a href="fashion.html" class="nav-link">Fashion</a></li>
-                    <li><a href="sakhi.html" class="nav-link">Sakhi</a></li>
-                    <li><a href="sangam.html" class="nav-link">Sangam</a></li>
-                    <li><a href="shivaji.html" class="nav-link">ShivaJi Theatre</a></li>
-                  </ul>
-                </li>               
-                <li><a href="archieve.html" class="nav-link">Archieve</a></li>
-                <li><a href="#contact-section" class="nav-link">Contact</a></li>
-                <li class="social"><a href="#contact-section" class="nav-link"><span class="icon-facebook"></span></a></li>
-                <li class="social"><a href="#contact-section" class="nav-link"><span class="icon-twitter"></span></a></li>
-                <li class="social"><a href="#contact-section" class="nav-link"><span class="icon-linkedin"></span></a></li>
-              </ul>
-            </nav>
-          </div>
-
-
-          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
-
-        </div>
-      </div>
-      
-    </header>
-
+      </ul>
+      <ul>
+        <li><a href="#">Coding2go</a></li>
+        <li class="hideOnMobile"><a href="#">Blog</a></li>
+        <li class="hideOnMobile"><a href="#">Products</a></li>
+        <li class="hideOnMobile"><a href="#">About</a></li>
+        <li class="hideOnMobile"><a href="#">Forum</a></li>
+        <li class="hideOnMobile"><a href="#">Login</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+      </ul>
+    </nav>
+  
     <main class="container-pg home">
     <div class="content">
       <h1>Gaurav Awashti</h1>
@@ -87,19 +45,18 @@
         The images enclosed in this email are part of my project, "Internal Conversation." As time progresses, we tend to detach from certain things and become attached to others. Similarly, as I transitioned from childhood to adulthood and shouldered responsibilities, I often found myself feeling isolated and nostalgic for the familiarity of the past. To escape from this reality, I frequently engage in conversations with my memories. In my artistic approach, I utilized self-portraiture, drawing inspiration from its historical significance and popularity from the Early Renaissance. Through the use of double exposure, combining self-portraits and still-life elements, I aimed to evoke a sense of ambiguity between memories and reality, fostering a thought-provoking experience.
     </div>  
       
-    
     </main>
 
-  
 
-  
-    
-    
-
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/main.js"></script>
+    <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+    </script>
   </body>
 </html>
