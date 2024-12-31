@@ -17,7 +17,9 @@
 @media (max-width: 800px) {
     .col1 {
       max-width: 100%;
+      height:auto;
     }
+
 }
   .stories-content {
     display: grid; /* Use CSS Grid for dynamic columns */
