@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     gap: 20px;
 }
-  .content {
+.content {
     max-width: 300px;
 }
 
@@ -17,7 +17,7 @@
 @media (max-width: 800px) {
     .col1 {
       max-width: 100%;
-      height:auto;
+      height: auto;
     }
 
 }
