@@ -2,81 +2,44 @@
 <html lang="en">
   <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="css/styles.css">
-    
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
 
-    <link rel="stylesheet" href="fonts/icomoon/style.css">
-
-    <link rel="stylesheet" href="css/owl.carousel.min.css">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    
-    <!-- Style -->
-    
-    <link rel="stylesheet" href="css/style.css">
-
-    <title>Stories/Fashion</title>
+    <title>Gaurav Portfolio</title>
   </head>
   <body>
-
-
-    <div class="site-mobile-menu site-navbar-target">
-      <div class="site-mobile-menu-header">
-        <div class="site-mobile-menu-close mt-3">
-          <span class="icon-close2 js-menu-toggle"></span>
+    <nav>
+      <ul class="sidebar">
+        <div class="cross" onclick=hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="m249 849-42-42 231-231-231-231 42-42 231 231 231-231 42 42-231 231 231 231-42 42-231-231-231 231Z"/></svg></a></div>
+        <div class ='navlist'>
+          <a href="stories.html">Stories</a>
+          <a href="archieve.html">Archieve</a>
+          <a href="contact.html">Contact</a>
         </div>
-      </div>
-      <div class="site-mobile-menu-body"></div>
-    </div>
-   
-    
-    <header class="site-navbar js-sticky-header site-navbar-target" role="banner">
-
-      <div class="container">
-        <div class="row align-items-center">
-          
-          <div class="col-6 col-xl-2">
-            <h1 class="mb-0 site-logo" style="white-space: nowrap;"><a href="index.html">Gaurav Awasthi<span class="text-primary">.</span> </a></h1>
+      </ul>
+      <ul>
+        <li><a href="index.html">gauravawasthi</a></li>
+        <div class="hideOnMobile dropdown">
+          <a href="stories.html">Stories</a>
+          <div class="dropdown-content">
+            <a href="concept.html">Concept</a>
+            <a href="fashion.html">Fashion</a>
+            <a href="sakhi.html">Sakhi</a>
+            <a href="sangam.html">Sangam</a>
+            <a href="shivaji.html">ShivaJi Theatre</a>
           </div>
-
-          <div class="col-12 col-md-10 d-none d-xl-block">
-            <nav class="site-navigation position-relative text-right" role="navigation">
-
-            <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li class="has-children">
-                    <a href="stories.html" class="nav-link">Stories</a>
-                    <ul class="dropdown">
-                        <li><a href="concept.html" class="nav-link">Concept</a></li>
-                        <li><a href="fashion.html" class="nav-link">Fashion</a></li>
-                        <li><a href="sakhi.html" class="nav-link">Sakhi</a></li>
-                        <li><a href="sangam.html" class="nav-link">Sangam</a></li>
-                        <li><a href="shivaji.html" class="nav-link">ShivaJi Theatre</a></li>
-                    </ul>
-                </li>               
-                <li><a href="archieve.html" class="nav-link">Archieve</a></li>
-                <li><a href="#contact-section" class="nav-link">Contact</a></li>
-                <li class="social"><a href="#contact-section" class="nav-link"><span class="icon-facebook"></span></a></li>
-                <li class="social"><a href="#contact-section" class="nav-link"><span class="icon-twitter"></span></a></li>
-                <li class="social"><a href="#contact-section" class="nav-link"><span class="icon-linkedin"></span></a></li>
-                </ul>
-        </nav>
-          </div>
-
-
-          <div class="col-6 d-inline-block d-xl-none ml-md-0 py-3" style="position: relative; top: 3px;"><a href="#" class="site-menu-toggle js-menu-toggle float-right"><span class="icon-menu h3"></span></a></div>
-
         </div>
-      </div>
-      
-    </header>
+        <li class="hideOnMobile"><a href="archieve.html">Archieve</a></li>
+        <li class="hideOnMobile"><a href="contact.html">Contact</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+      </ul>
+    </nav>
 
-    <main class="container-pg stories">
-        <div class="text-subs">
+    <main class="container">
+        <div class="col1">
             <h1>
                 Fashion
             </h1>
@@ -86,19 +49,19 @@
         </div>
 
         <div class="gallery">
-            <div class="gallery-item lazy"><img src="images/s/fashion/fashion1.jpg" loading="lazy"></div>
-            <div class="gallery-item lazy"><img src="images/s/fashion/fashion2.jpg" loading="lazy"></div>
-            <div class="gallery-item lazy"><img src="images/s/fashion/fashion3.jpg" loading="lazy"></div>
-            <div class="gallery-item lazy"><img src="images/s/fashion/fashion4.jpg" loading="lazy"></div>
-            <div class="gallery-item lazy"><img src="images/s/fashion/fashion5.jpg" loading="lazy"></div>
-            <div class="gallery-item lazy"><img src="images/s/fashion/fashion6.jpg" loading="lazy"></div>
-            <div class="gallery-item lazy"><img src="images/s/fashion/fashion7.jpg" loading="lazy"></div>
-            <div class="gallery-item lazy"><img src="images/s/fashion/fashion8.jpg" loading="lazy"></div>
-            <div class="gallery-item lazy"><img src="images/s/fashion/fashion9.jpg" loading="lazy"></div>
-            <div class="gallery-item lazy"><img src="images/s/fashion/fashion10.jpg"></div>
-            <div class="gallery-item lazy"><img src="images/s/fashion/fashion11.jpg"></div>
-            <div class="gallery-item lazy"><img src="images/s/fashion/fashion12.jpg"></div>
-            <div class="gallery-item lazy"><img src="images/s/fashion/fashion13.jpg"></div>
+            <div class="gallery-item lazy"><img src="assets/images/s/fashion/fashion1.jpg" loading="lazy"></div>
+            <div class="gallery-item lazy"><img src="assets/images/s/fashion/fashion2.jpg" loading="lazy"></div>
+            <div class="gallery-item lazy"><img src="assets/images/s/fashion/fashion3.jpg" loading="lazy"></div>
+            <div class="gallery-item lazy"><img src="assets/images/s/fashion/fashion4.jpg" loading="lazy"></div>
+            <div class="gallery-item lazy"><img src="assets/images/s/fashion/fashion5.jpg" loading="lazy"></div>
+            <div class="gallery-item lazy"><img src="assets/images/s/fashion/fashion6.jpg" loading="lazy"></div>
+            <div class="gallery-item lazy"><img src="assets/images/s/fashion/fashion7.jpg" loading="lazy"></div>
+            <div class="gallery-item lazy"><img src="assets/images/s/fashion/fashion8.jpg" loading="lazy"></div>
+            <div class="gallery-item lazy"><img src="assets/images/s/fashion/fashion9.jpg" loading="lazy"></div>
+            <div class="gallery-item lazy"><img src="assets/images/s/fashion/fashion10.jpg"></div>
+            <div class="gallery-item lazy"><img src="assets/images/s/fashion/fashion11.jpg"></div>
+            <div class="gallery-item lazy"><img src="assets/images/s/fashion/fashion12.jpg"></div>
+            <div class="gallery-item lazy"><img src="assets/images/s/fashion/fashion13.jpg"></div>
         </div>
         
     </main>
@@ -108,11 +71,15 @@
   
     
     
-
-    <script src="js/jquery-3.3.1.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/jquery.sticky.js"></script>
-    <script src="js/main.js"></script>
+ <script>
+      function showSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+      }
+      function hideSidebar(){
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+      }
+    </script>
   </body>
 </html>
